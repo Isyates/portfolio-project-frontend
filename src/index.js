@@ -6,14 +6,13 @@ import reportWebVitals from './reportWebVitals';
 // import router
 import { BrowserRouter as Router } from 'react-router-dom';
 
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <Router>
     <App />
     </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
